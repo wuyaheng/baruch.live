@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../../App.css';
 
 class Home extends Component {
     render() {
@@ -11,9 +11,9 @@ class Home extends Component {
 
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 mt-4 pt-4 text-center">
+                        <div className="col-md-6 text-center" id="landing-text">
                             <h1>Baruch.Live</h1>
-                            <h5 className="mt-4 pt-4">We provides a full view of all the current and upcoming events held at Baruch and open to Baruch students</h5>
+                            <h6>We provides a full view of all the current and upcoming events held at Baruch and open to Baruch students</h6>
 
                             <button type="button" class="btn btn-outline-dark mt-4">View Calendar</button>
                         </div>
