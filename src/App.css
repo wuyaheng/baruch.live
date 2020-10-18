@@ -23,3 +23,33 @@ h6 {
     text-transform: capitalize;
     line-height: 2rem;
 }
+
+.nav-wrapper {
+    background: #eeeeee;
+  }
+
+  li a {
+    color: #212529 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+button {
+    background: #0467BE !important;
+    border: 2px solid #0467BE !important;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:active, button:hover {
+    background: transparent !important;
+    color:  #0467BE !important;
+    border: 2px solid #0467BE !important;
+}
