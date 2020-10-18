@@ -18,7 +18,11 @@ export default class Scheduler extends Component {
         ];
  
         const { events } = this.props;
+        scheduler.config.buttons_right = ["dhx_cancel_btn"];
+        scheduler.config.buttons_left = [];
+
         scheduler.init(this.schedulerContainer, new Date(2020, 9, 10), "month");
+
         scheduler.clearAll();
         scheduler.parse(events);
     }
