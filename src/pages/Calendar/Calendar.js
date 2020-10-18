@@ -11,9 +11,6 @@ class Calendar extends Component {
     render() {
         return (
             <div>
-            <div class="alert alert-primary" role="alert">
-               <h4 className="text-center">Baruch.Live Calendar</h4>
-                </div>
                 <div className='scheduler-container'>
                     <Scheduler events={data}/>
                 </div>
