@@ -5,9 +5,23 @@ class Home extends Component {
     render() {
         return (
             <div>
-            <div class="alert alert-primary" role="alert">
-               <h4 className="text-center">Baruch.Live</h4>
+                <div className="navbar-fixed">
+                    <nav className="nav-wrapper">
+                    <div className="container">
+                        <a href="#" className="sidenav-trigger" data-target="mobile-links">
+                            <i className="material-icons">menu</i>
+                        </a>
+                        <ul className="right hide-on-med-and-down">
+                            <li><a href="/">Home</a></li> 
+                            <li><a href="/">About</a></li> 
+                        </ul>
+                    </div>
+                </nav>
                 </div>
+                <ul className="sidenav" id="mobile-links"> 
+                    <li><a href="/">Home</a></li> 
+                    <li><a href="/">About</a></li> 
+                </ul>
 
                 <div className="container">
                     <div className="row">
