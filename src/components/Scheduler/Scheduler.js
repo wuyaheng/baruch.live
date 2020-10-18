@@ -20,6 +20,10 @@ export default class Scheduler extends Component {
         const { events } = this.props;
         scheduler.config.buttons_right = ["dhx_cancel_btn"];
         scheduler.config.buttons_left = [];
+        scheduler.config.lightbox.sections=[
+            {name:"description", height:140, map_to:"text", type:"textarea" , focus:true},
+            {name:"time", height:50, type:"time", map_to:"auto"}
+        ];
 
         scheduler.init(this.schedulerContainer, new Date(2020, 9, 10), "month");
 
