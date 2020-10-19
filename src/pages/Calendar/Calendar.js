@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Scheduler from '../../components/Scheduler';
+import { Link } from 'react-router-dom';
+import '../../App.css';
 
  
 const data = [
@@ -11,6 +13,11 @@ class Calendar extends Component {
     render() {
         return (
             <div>
+                <ul class="nav justify-content-center">
+                <li class="nav-item">
+                     <Link to="/" type="button" id="calenderBtn" className="btn btn-outline-dark mt-2">Back Home</Link>
+                </li>
+                </ul>
                 <div className='scheduler-container'>
                     <Scheduler events={data}/>
                 </div>
