@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Team from '../../components/Team/Team';
 import '../../App.css';
 
-class Home extends Component {
+class About extends Component {
     render() {
         return (
             <div>
@@ -19,20 +20,15 @@ class Home extends Component {
             </nav>
 
                 <div className="container">
-                    <div className="row mt-4 pt-4">
-                        <div className="col-md-6 text-center" id="landing-text">
-                            <h1>Baruch.Live</h1>
-                            <h6>We provide a full view of all the current and upcoming events held at Baruch and open to Baruch students</h6>
-                            
-                            <Link to="/calendar" type="button" id="calenderBtn" className="btn btn-outline-dark mt-4">View Calendar</Link>
-                        </div>
-                        <div className="col-md-6 text-center">
-                            <img width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
-                        </div>
+                    <div className="row mt-2 justify-content-center">
+                    <h1 className="text-center mb-3"><span style={{color: "#212529"}}>Our Team</span></h1>
+                    </div>
+                    <div className="row mt-2 justify-content-center">
+                    <Team />
                     </div>
                 </div>
             </div>
         );
     }
  }
- export default Home; 
+ export default About; 
