@@ -28,16 +28,6 @@ h6 {
     background: #eeeeee;
   }
 
-a {
-    color: #212529 !important;
-    font-size: 1.3rem;
-}
-
-a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-}
 
 #calenderBtn {
     background: #0467BE !important;
@@ -59,4 +49,18 @@ a:hover {
 
 .navbar {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 0rem 1.5rem;
+}
+
+.nav-link {
+    color: #212529 !important;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: none;
+    outline: none;
+    color: #fff;
 }
