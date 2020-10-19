@@ -19,7 +19,7 @@ class About extends Component {
             </div>
             </nav>
 
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row mt-2 justify-content-center">
                     <h1 className="text-center mb-3"><span style={{color: "#212529"}}>Our Team</span></h1>
                     </div>
