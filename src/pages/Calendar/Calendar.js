@@ -13,9 +13,9 @@ class Calendar extends Component {
     render() {
         return (
             <div>
-                <ul class="nav justify-content-center">
+                <ul class="nav justify-content-end">
                 <li class="nav-item">
-                     <Link to="/" type="button" id="calenderBtn" className="btn btn-outline-dark mt-2">Back Home</Link>
+                     <Link to="/" type="button" id="calenderBtn" className="btn btn-outline-dark mt-2 mr-3">Back Home</Link>
                 </li>
                 </ul>
                 <div className='scheduler-container'>
