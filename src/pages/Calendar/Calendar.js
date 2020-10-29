@@ -8,26 +8,45 @@ import cheerio from "cheerio";
 
 const CORS = "https://cors-anywhere.herokuapp.com/";
 
-async function scrapeRealtor() {
-  const html = await axios.get(CORS + 'https://www.realtor.com/news/real-estate-news/');
-  const $ = await cheerio.load(html.data);
-  let data = [];
+// async function scrapeRealtor() {
+//   const html = await axios.get(CORS + 'https://www.realtor.com/news/real-estate-news/');
+//   const $ = await cheerio.load(html.data);
+//   let data = [];
 
-  $('.site-main article').each((i, elem) => {
-    if (i <= 3) {
-      data.push({
-        image: $(elem).find('img.wp-post-image').attr('src'),
-        title: $(elem).find('h2.entry-title').text(),
-        excerpt: $(elem).find('p.hide_xxs').text().trim(),
-        link: $(elem).find('h2.entry-title a').attr('href')
-      })
-    }
+//   $('.site-main article').each((i, elem) => {
+//     if (i <= 3) {
+//       data.push({
+//         image: $(elem).find('img.wp-post-image').attr('src'),
+//         title: $(elem).find('h2.entry-title').text(),
+//         excerpt: $(elem).find('p.hide_xxs').text().trim(),
+//         link: $(elem).find('h2.entry-title a').attr('href')
+//       })
+//     }
+//   });
+
+//   console.log(data);
+// }
+
+// scrapeRealtor()
+
+
+const RSS_URL = CORS + 'https://baruch.campuslabs.com/engage/events.rss';
+
+fetch(RSS_URL)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    console.log(data);
+    // let newData = []
+    const items = data.querySelectorAll("item");
+    items.forEach(el => {
+      console.log(el.getElementsByTagName("title")[0]) 
+      console.log(el.getElementsByTagName("link")[0]) 
+      console.log(el.getElementsByTagName("start")[0]) 
+      console.log(el.getElementsByTagName("end")[0]) 
+      console.log(el.getElementsByTagName("location")[0]) 
+    })
   });
-
-  console.log(data);
-}
-
-scrapeRealtor()
 
 const data = [
   {
