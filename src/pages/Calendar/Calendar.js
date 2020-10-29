@@ -6,7 +6,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 
 
-const CORS = "https://cors-anywhere.herokuapp.com/";
+const CORS = "https://cors-anywhere.herokuapp.com/"
 
 // async function scrapeRealtor() {
 //   const html = await axios.get(CORS + 'https://www.realtor.com/news/real-estate-news/');
@@ -36,16 +36,19 @@ fetch(RSS_URL)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
-    console.log(data);
-    // let newData = []
+    console.log(data)
+    let newData = []
     const items = data.querySelectorAll("item");
     items.forEach(el => {
-      console.log(el.getElementsByTagName("title")[0]) 
-      console.log(el.getElementsByTagName("link")[0]) 
-      console.log(el.getElementsByTagName("start")[0]) 
-      console.log(el.getElementsByTagName("end")[0]) 
-      console.log(el.getElementsByTagName("location")[0]) 
+      newData.push({
+        title: el.getElementsByTagName("title")[0].innerHTML,
+        registerlink: el.getElementsByTagName("link")[0].innerHTML,
+        starttime: el.getElementsByTagName("start")[0].innerHTML,
+        endtime: el.getElementsByTagName("end")[0].innerHTML,
+        location: el.getElementsByTagName("location")[0].innerHTML
+      })
     })
+    console.log(newData)
   });
 
 const data = [
