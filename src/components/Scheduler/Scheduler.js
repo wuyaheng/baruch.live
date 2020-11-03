@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "dhtmlx-scheduler";
 import "dhtmlx-scheduler/codebase/dhtmlxscheduler_material.css";
-// import './style.css;'
 
 const scheduler = window.scheduler;
 
@@ -48,7 +47,7 @@ export default class Scheduler extends Component {
       { name: "time", height: 50, type: "time", map_to: "auto" },
     ];
 
-    scheduler.init(this.schedulerContainer, new Date(2020, 9, 10), "month");
+    scheduler.init(this.schedulerContainer, new Date(2020, 10, 11), "month");
 
     scheduler.clearAll();
     scheduler.parse(events);
