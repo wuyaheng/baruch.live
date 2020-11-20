@@ -8,6 +8,7 @@ class About extends Component {
         return (
             <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,9 +22,9 @@ class About extends Component {
 
                 <div className="container-fluid">
                     <div className="row mt-2 justify-content-center">
-                    <h1 className="text-center mb-3"><span style={{color: "#212529"}}>Our Team</span></h1>
+                    <h1 className="text-center mb-3 mt-3"><span style={{color: "#212529"}}>Our Team</span></h1>
                     </div>
-                    <div className="row mt-2 justify-content-center">
+                    <div className="row mt-2 justify-content-center"> 
                     <Team />
                     </div>
                 </div>

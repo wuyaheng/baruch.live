@@ -7,6 +7,7 @@ class Home extends Component {
         return (
             <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</span>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -19,15 +20,15 @@ class Home extends Component {
             </nav>
 
                 <div className="container">
-                    <div className="row mt-4 pt-4">
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <img alt="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
+                        </div>
                         <div className="col-md-6 text-center" id="landing-text">
                             <h1>Baruch.Live</h1>
                             <h6>We provide a full view of all the current and upcoming events held at Baruch and open to Baruch students</h6>
                             
                             <Link to="/calendar" type="button" id="calenderBtn" className="btn btn-outline-dark mt-4">View Calendar</Link>
-                        </div>
-                        <div className="col-md-6 text-center">
-                            <img alt="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
                         </div>
                     </div>
                 </div>
