@@ -7,15 +7,15 @@ class About extends Component {
     render() {
         return (
             <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-            <Link to="/" class="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</Link>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
+            <Link to="/" className="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</Link>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                <Link to="/login" class="nav-link">Login<span class="sr-only">(current)</span></Link>
-                <Link to="/about" class="nav-link">About</Link> 
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav ml-auto">
+                <Link to="/login" className="nav-link">Login<span className="sr-only">(current)</span></Link>
+                <Link to="/about" className="nav-link">About</Link> 
                 </div>
             </div>
             </nav>
