@@ -7,15 +7,15 @@ class About extends Component {
     render() {
         return (
             <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+            <Link to="/" class="navbar-brand mb-0" style={{fontFamily: "'Niconne', cursive", fontSize: "2rem", fontWeight: "bolder"}}>Baruch.live</Link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                <Link to="/" class="nav-link">Home <span class="sr-only">(current)</span></Link>
-                <Link to="/about" class="nav-link">About</Link>
+                <Link to="/login" class="nav-link">Login<span class="sr-only">(current)</span></Link>
+                <Link to="/about" class="nav-link">About</Link> 
                 </div>
             </div>
             </nav>
