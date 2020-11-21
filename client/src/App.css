@@ -29,23 +29,53 @@ h5 {
   }
 
 
+.btn-block {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
 #calenderBtn {
     background: #0467BE !important;
-    color: white !important;
-    border: 2px solid #0467BE !important;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-}
+    color:#fff;
+    border:none;
+    position:relative;
+    height: 50px;
+    font-size:1.4em; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
 
-#calenderBtn:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
+  #calenderBtn:hover{
+    background:#fff !important;
+    color:#0467BE; 
+  }
 
-#calenderBtn:active, #calenderBtn:hover {
-    background: transparent !important;
-    color:  #0467BE !important;
-    border: 2px solid #0467BE !important;
-}
+  #calenderBtn:before, #calenderBtn:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #0467BE;
+    transition:400ms ease all;
+  }
+
+  #calenderBtn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  #calenderBtn:hover:before, #calenderBtn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
 
 .navbar {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -74,6 +104,10 @@ input:focus {
     margin-top: 5rem;
 }
 
+#intro {
+    margin-top: 6rem;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar {
         padding: 0.7rem 1.5rem;
@@ -86,5 +120,8 @@ input:focus {
     h5 {
         font-weight: 400;
         font-size: 1.5rem;
+    }
+    #intro {
+        margin-top: 0rem;
     }
   }
