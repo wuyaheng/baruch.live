@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import "../../App.css";
 
 const Register = () => {
-  const [state, setState] = React.useState({
+  const [user, setUser] = React.useState({
     name: "",
     email: "",
     password: "",
+    password2: ""
   });
 
-  const handleChange = ({ target: [name, value] }) =>
-    setState({ ...state, [name]: value });
+const { name, email, password, password2 } = user; 
+
+const handleChange = e => setUser ({...user, [e.target.name]: e.target.value });
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -20,11 +22,11 @@ const Register = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(state),
+        body: JSON.stringify(user),
       });
-
+      console.log(response);
       if (response.status !== 200) throw new Error("Error");
-
+    
       response = await response.json();
 
       console.log(response);
@@ -83,10 +85,10 @@ const Register = () => {
               <h1 className="text-center mb-4 pb-3">Register Now</h1>
               <form onSubmit={submitForm}>
                 <div className="form-group">
-                  {/* <label htmlFor="name">Name</label> */}
                   <input
                     type="text"
                     name="name"
+                    value={name}
                     onChange={handleChange}
                     className="form-control"
                     required
@@ -94,21 +96,21 @@ const Register = () => {
                   />
                 </div>
                 <div className="form-group">
-                  {/* <label htmlFor="email">Email Address</label> */}
                   <input
                     type="email"
                     onChange={handleChange}
                     name="email"
+                    value={email}
                     className="form-control"
                     required
                     placeholder="Enter your email"
                   />
                 </div>
                 <div className="form-group">
-                  {/* <label htmlFor="password">Password</label> */}
                   <input
                     type="password"
                     name="password"
+                    value={password}
                     className="form-control"
                     onChange={handleChange}
                     required
@@ -117,11 +119,12 @@ const Register = () => {
                   />
                 </div>
                 <div className="form-group">
-                  {/* <label htmlFor="password2">Confirm Password</label> */}
                   <input
                     type="password"
                     name="password2"
+                    value={password2} 
                     className="form-control"
+                    onChange={handleChange}
                     required
                     minLength="6"
                     placeholder="Confirm your password"

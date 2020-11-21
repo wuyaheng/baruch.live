@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import "../../App.css";
 
 const Login = () => {
-  const [state, setState] = React.useState({
+  const [user, setUser] = React.useState({
     email: "",
     password: "",
   });
-
-  const handleChange = ({ target: [name, value] }) =>
-    setState({ ...state, [name]: value });
+  
+  const { email, password } = user; 
+  
+  const handleChange = e => setUser ({...user, [e.target.name]: e.target.value });
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -18,6 +19,8 @@ const Login = () => {
       console.log(error.message);
     }
   };
+
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -75,6 +78,7 @@ const Login = () => {
                   <input
                     type="email"
                     name="email"
+                    value={email}
                     onChange={handleChange}
                     className="form-control"
                     id="exampleInputEmail1"
@@ -89,6 +93,7 @@ const Login = () => {
                   <input
                     type="password"
                     name="password"
+                    value={password}
                     className="form-control"
                     id="exampleInputPassword1"
                     onChange={handleChange}
