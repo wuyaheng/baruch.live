@@ -22,13 +22,13 @@ class Home extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center">
-                            <img alt="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
+                            <img alt="calendar" id="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
                         </div>
                         <div className="col-md-6 text-center" id="landing-text">
-                            <h6>We provide a full view of all the current and upcoming events held at Baruch and open to Baruch students</h6>
+                            <h5>Hi, I'm A Full-view Calendar <br/>for Baruch Faculties and Students</h5>
                             
                             <Link to="/calendar" type="button" id="calenderBtn" className="btn btn-outline-dark mt-4">View Calendar</Link>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>

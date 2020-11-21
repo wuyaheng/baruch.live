@@ -63,6 +63,7 @@ const Login = () => {
           <div className="col-md-8 text-center">
             <img
               alt="calendar"
+              id="calendar"
               width="60%"
               src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"
             />

@@ -7,7 +7,7 @@
     text-align: center; 
     padding-right: 1rem;
     padding-left: 1rem;
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 
 h1 {
@@ -17,11 +17,11 @@ h1 {
     font-family: 'Calistoga', cursive;
 }
 
-h6 {
-    font-weight: 400;
-    font-size: 1.3rem;
+h5 {
+    font-weight: 500;
+    font-size: 2rem;
     text-transform: capitalize;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .nav-wrapper {
@@ -70,6 +70,10 @@ input:focus {
     box-shadow: none !important;
 }
 
+#calendar {
+    margin-top: 5rem;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar {
         padding: 0.7rem 1.5rem;
@@ -78,5 +82,9 @@ input:focus {
         padding: 0.7rem 0.5rem;
         width: 100%;
         text-align: center;
+    }
+    h5 {
+        font-weight: 400;
+        font-size: 1.5rem;
     }
   }
