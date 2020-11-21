@@ -42,6 +42,7 @@ h5 {
     cursor:pointer;
     transition:800ms ease all;
     outline:none;
+    margin-bottom: 2rem;
   }
 
   #calenderBtn:hover{
@@ -118,5 +119,8 @@ input:focus {
     }
     #intro {
         margin-top: 0rem;
+    }
+    #landing-text, #calendar {
+        margin-top: 1rem;
     }
   }
