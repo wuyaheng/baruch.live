@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Team.module.css";
+import './Team.css'
 
 const Team = () => (
   <>
-    <div style={styles.teammember} className="col-md-2 text-center">
+    <div className="teammember" className="col-md-2 text-center">
       <img
-        style={styles.teamphoto}
+        className="teamphoto"
         alt="Jing"
         width="80%"
         src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2FJingWang.png?v=1603066917833"
@@ -19,9 +19,9 @@ const Team = () => (
       <p>Business Analyst</p>
     </div>
 
-    <div style={styles.teammember} className="col-md-2 text-center">
+    <div className="teammember" className="col-md-2 text-center">
       <img
-        style={styles.teamphoto}
+        className="teamphoto"
         alt="Sichan"
         width="80%"
         src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2FSichanChen.png?v=1603066923278"
@@ -35,9 +35,9 @@ const Team = () => (
       <p>System Designer</p>
     </div>
 
-    <div style={styles.teammember} className="col-md-2 text-center">
+    <div className="teammember" className="col-md-2 text-center">
       <img
-        style={styles.teamphoto}
+        className="teamphoto"
         alt="Yajie"
         width="80%"
         src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2FYajieHou.png?v=1603066925778"
@@ -51,9 +51,9 @@ const Team = () => (
       <p>Product Manager</p>
     </div>
 
-    <div style={styles.teammember} className="col-md-2 text-center">
+    <div className="teammember" className="col-md-2 text-center">
       <img
-        className={styles.teamphoto}
+        className="teamphoto" 
         alt="Phoebe"
         width="80%"
         src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2FYahengWu.png?v=1603066913331"
