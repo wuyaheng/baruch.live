@@ -1,20 +1,21 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+const URI = require('./default.json').mongoURI;
 
 const connectDB = async () => {
     try {
         await mongoose
-        .connect(db, {
-            useNewUrlParser: true,
-            useCreateIndex: true,
-            useFindAndModify: false
-        });
+            .connect(URI, {
+                useNewUrlParser: true,
+                useCreateIndex: true,
+                useFindAndModify: false
+            });
         console.log("MongoDB Connected...")
-    } catch(err) {
+    } catch (err) {
         console.log(err.message)
         process.exit(1);
     }
 }
 
-module.exports = connectDB;
+module.exports = {
+    connectDB
+};
