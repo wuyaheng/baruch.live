@@ -58,16 +58,9 @@ const Login = () => {
         </div>
       </nav>
 
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-md-8 text-center">
-            <img
-              alt="calendar"
-              id="calendar"
-              width="60%"
-              src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"
-            />
-          </div>
+
           <div className="col-md-4 text-center" id="landing-text">
             <div className="form-container">
               <h1 className="text-center mb-4 pb-3">Login</h1>
@@ -111,6 +104,15 @@ const Login = () => {
                 </p>
               </form>
             </div>
+          </div>
+
+          <div className="col-md-8 m-0 p-0 text-center">
+            <img
+              alt="calendar"
+              id="calendar"
+              width="100%"
+              src="https://cdn.glitch.com/79b975e7-f2dd-49c9-bdbc-ead9636766ae%2Fcal_bgIMG.png?v=1606100608924"
+            />
           </div>
         </div>
       </div>

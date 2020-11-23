@@ -19,16 +19,19 @@ class Home extends Component {
             </div>
             </nav>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 text-center">
-                            <img alt="calendar" id="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/>
-                        </div>
-                        <div className="col-md-6 text-center" id="landing-text">
+                <div className="container-fluid">
+                    <div className="row vh-100">
+                        <div className="col-md-5 text-center" id="landing-text">
                             <h5 id="intro">Hi, I'm A Full-view Calendar <br/>for Baruch Faculties and Students</h5>
                             
                             <Link to="/calendar" type="button" id="calenderBtn" className="btn btn-outline-dark btn-block mt-4">View Calendar</Link>
                         </div> 
+
+                        <div className="col-md-7 m-0 p-0 text-center">
+                            {/* <img alt="calendar" id="calendar" width="80%" src="https://cdn.glitch.com/8c639e73-4683-4cc1-b093-ef7b7328e9e5%2Fimage-vector.svg?v=1603053176910"/> */}
+                            <img alt="calendar" id="calendar" width="100%" src="https://cdn.glitch.com/79b975e7-f2dd-49c9-bdbc-ead9636766ae%2Fcal_bgIMG.png?v=1606100608924"/>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,9 +28,12 @@ h5 {
     background: #eeeeee;
   }
 
+.btn-block {
+    background: #004085 !important;
+}
 
 #calenderBtn {
-    background: #0467BE !important;
+    background: #004085 !important;
     color:#fff;
     border:none;
     position:relative;
@@ -43,11 +46,13 @@ h5 {
     transition:800ms ease all;
     outline:none;
     margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
   #calenderBtn:hover{
     background:#fff !important;
-    color:#0467BE; 
+    color:#004085; 
   }
 
   #calenderBtn:before, #calenderBtn:after{
@@ -57,7 +62,7 @@ h5 {
     right:0;
     height:2px;
     width:0;
-    background: #0467BE;
+    background: #004085;
     transition:400ms ease all;
   }
 
@@ -96,12 +101,14 @@ input:focus {
     box-shadow: none !important;
 }
 
-#calendar {
-    margin-top: 5rem;
-}
 
 #intro {
     margin-top: 6rem;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
