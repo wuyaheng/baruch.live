@@ -58,8 +58,8 @@ const Login = () => {
         </div>
       </nav>
 
-      <div className="container-fluid">
-        <div className="row">
+      <div className="container-fluid p-0">
+        <div className="row vh-100">
 
           <div className="col-md-4 text-center" id="landing-text">
             <div className="form-container">

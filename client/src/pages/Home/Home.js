@@ -19,7 +19,7 @@ class Home extends Component {
             </div>
             </nav>
 
-                <div className="container-fluid">
+                <div className="container-fluid p-0">
                     <div className="row vh-100">
                         <div className="col-md-5 text-center" id="landing-text">
                             <h5 id="intro">Hi, I'm A Full-view Calendar <br/>for Baruch Faculties and Students</h5>
