@@ -1,0 +1,7 @@
+.navbar, .btn-primary, .bg-primary, .badge-primary, .alert-primary {
+    background: #004085;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004085, #87ADD6, #fff) !important;  
+    background: linear-gradient(to right, #004085, #87ADD6, #fff) !important; 
+    color: #fff;
+    border-color: transparent !important;
+  }

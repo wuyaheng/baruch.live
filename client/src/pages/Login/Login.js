@@ -30,7 +30,7 @@ const Login = () => {
           style={{
             fontFamily: "'Niconne', cursive",
             fontSize: "2rem",
-            fontWeight: "bolder",
+            color: "#fff"
           }}
         >
           Baruch.live

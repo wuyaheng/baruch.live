@@ -43,7 +43,7 @@ const handleChange = e => setUser ({...user, [e.target.name]: e.target.value });
           style={{
             fontFamily: "'Niconne', cursive",
             fontSize: "2rem",
-            fontWeight: "bolder",
+            color: "#fff"
           }}
         >
           Baruch.live
