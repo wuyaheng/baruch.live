@@ -107,8 +107,12 @@ input:focus {
 }
 
 form {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+}
+
+.form-container {
+    padding-top: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,5 +133,8 @@ form {
     }
     #landing-text, #calendar {
         margin-top: 1rem;
+    }
+    form {
+        width: 80%;
     }
   }

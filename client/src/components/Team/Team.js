@@ -12,7 +12,7 @@ const Team = () => (
       />
       <h4
         className="text-center"
-        style={{ color: "#5394A0", letterSpacing: "-1px" }}
+        style={{ color: "#87ADD6", letterSpacing: "-1px" }}
       >
         Jing Wang
       </h4>
@@ -28,7 +28,7 @@ const Team = () => (
       />
       <h4
         className="text-center"
-        style={{ color: "#5394A0", letterSpacing: "-1px" }}
+        style={{ color: "#87ADD6", letterSpacing: "-1px" }}
       >
         Sichan Chen
       </h4>
@@ -44,7 +44,7 @@ const Team = () => (
       />
       <h4
         className="text-center"
-        style={{ color: "#5394A0", letterSpacing: "-1px" }}
+        style={{ color: "#87ADD6", letterSpacing: "-1px" }}
       >
         Yajia Hou
       </h4>
@@ -60,7 +60,7 @@ const Team = () => (
       />
       <h4
         className="text-center"
-        style={{ color: "#5394A0", letterSpacing: "-1px" }}
+        style={{ color: "#87ADD6", letterSpacing: "-1px" }}
       >
         Yaheng Wu
       </h4>

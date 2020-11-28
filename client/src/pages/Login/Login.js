@@ -58,10 +58,10 @@ const Login = () => {
         </div>
       </nav>
 
-      <div className="container-fluid p-0">
-        <div className="row vh-100">
+      <div className="container-fluid p-0 m-0">
+        <div className="row p-0 m-0">
 
-          <div className="col-md-4 text-center" id="landing-text">
+          <div className="col-md-5 m-0 p-0 text-center" id="landing-text">
             <div className="form-container">
               <h1 className="text-center mb-4 pb-3">Login</h1>
               <form onSubmit={submitForm}>
@@ -106,7 +106,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="col-md-8 m-0 p-0 text-center">
+          <div className="col-md-7 m-0 p-0 text-center">
             <img
               alt="calendar"
               id="calendar"
