@@ -22,7 +22,7 @@ class Home extends Component {
                 <div className="container-fluid p-0 m-0">
                     <div className="row m-0 p-0">
                         <div className="col-md-5 text-center" id="landing-text">
-                            <h5 id="intro">Hi, I'm A Full-view Calendar <br/>for Baruch Faculties and Students</h5>
+                            <h5 id="intro">Hi, I'm A Full-view Calendar <br/>for Baruch Community</h5>
                             
                             <Link to="/calendar" type="button" id="calenderBtn" className="btn btn-outline-dark btn-block mt-4">View Calendar</Link>
                         </div> 
