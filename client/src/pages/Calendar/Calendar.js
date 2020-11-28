@@ -89,7 +89,7 @@ class Calendar extends Component {
               id="calenderBtn"
               className="btn btn-outline-dark mt-2 mr-3"
             >
-              Back Home
+              Home
             </Link>
           </li>
         </ul>
