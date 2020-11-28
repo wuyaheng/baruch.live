@@ -15,7 +15,42 @@ class Calendar extends Component {
   componentDidMount() {
     this.getRSS();
     this.scrapeRealtor();
+    this.getSchoolCalendar();
   }
+
+  getSchoolCalendar = async () => {
+    const CORS = "https://cors-anywhere.herokuapp.com/";
+    const RSS_URL = CORS + "https://www.baruch.cuny.edu/calendar/RSSSyndicator.aspx?category=&location=&type=N&binary=Y&keywords=&ics=Y";
+    try {
+      const response = await fetch(RSS_URL);
+      const str = await response.text();
+      const data = await new window.DOMParser().parseFromString(
+        str,
+        "text/xml"
+      );
+      let extraData = [];
+      const items = data.querySelectorAll("item");
+      items.forEach((el) => {
+        console.log(el)
+        extraData.push({
+          text: [
+            el.getElementsByTagName("title")[0].innerHTML.slice(9,(el.getElementsByTagName("title")[0].innerHTML.length-3)),
+            "Link: https://www.baruch.cuny.edu/calendar/EventList.aspx?view=Summary#"
+          ].join("\n"),
+          start_date: moment(
+            el.getElementsByTagName("pubDate")[0].innerHTML
+          ).format("YYYY-MM-DD HH:mm"),
+          end_date: moment(
+            el.getElementsByTagName("pubDate")[0].innerHTML
+          ).format("YYYY-MM-DD HH:mm")
+        });
+      });
+
+      this.setState({ events: [...this.state.events, ...extraData] });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   
   scrapeRealtor = async () => {
     const CORS = "https://cors-anywhere.herokuapp.com/";
