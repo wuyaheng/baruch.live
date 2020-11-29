@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Scheduler from "../../components/Scheduler";
+// import Scheduler from "../../components/Scheduler";
+import PersonalScheduler from "../../components/PersonalScheduler" 
 import { Link } from "react-router-dom";
 import "../../App.css";
 import moment from "moment";
@@ -31,7 +32,6 @@ class Calendar extends Component {
       let extraData = [];
       const items = data.querySelectorAll("item");
       items.forEach((el) => {
-        console.log(el)
         extraData.push({
           text: [
             el.getElementsByTagName("title")[0].innerHTML.slice(9,(el.getElementsByTagName("title")[0].innerHTML.length-3)),
@@ -129,7 +129,8 @@ class Calendar extends Component {
           </li>
         </ul>
         <div className="scheduler-container">
-          <Scheduler events={this.state.events} />
+          {/* <Scheduler events={this.state.events} /> */}
+          <PersonalScheduler events={this.state.events} />
         </div>
       </div>
     );

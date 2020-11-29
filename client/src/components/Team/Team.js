@@ -3,7 +3,7 @@ import './Team.css'
 
 const Team = () => (
   <>
-    <div className="teammember" className="col-md-2 text-center">
+    <div className="col-md-2 text-center teammember">
       <img
         className="teamphoto"
         alt="Jing"
@@ -19,7 +19,7 @@ const Team = () => (
       <p>Business Analyst</p>
     </div>
 
-    <div className="teammember" className="col-md-2 text-center">
+    <div className="col-md-2 text-center teammember"> 
       <img
         className="teamphoto"
         alt="Sichan"
@@ -35,7 +35,7 @@ const Team = () => (
       <p>System Designer</p>
     </div>
 
-    <div className="teammember" className="col-md-2 text-center">
+    <div className="col-md-2 text-center teammember"> 
       <img
         className="teamphoto"
         alt="Yajie"
@@ -51,7 +51,7 @@ const Team = () => (
       <p>Product Manager</p>
     </div>
 
-    <div className="teammember" className="col-md-2 text-center">
+    <div className="col-md-2 text-center teammember"> 
       <img
         className="teamphoto" 
         alt="Phoebe"
