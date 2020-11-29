@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const salt = bcrypt.genSaltSync(10);
 const secret = require('../config/default.json').jwtSecret;
 
 const UserSchema = mongoose.Schema({
@@ -24,10 +25,10 @@ const UserSchema = mongoose.Schema({
 
 UserSchema.methods = {
     hashPassword: function (plainPW) {
-        return bcrypt.hashSync(plainPW, secret)
+        return bcrypt.hashSync(plainPW, salt)
     },
     checkPassword: function (plainPW) {
-        return bcrypt.compareSync(plainPW, secret)
+        return bcrypt.compareSync(plainPW, this.password)
     }
 }
 
